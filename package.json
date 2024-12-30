@@ -5,14 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/the-coding-newbies-main/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^6.0.5"
   },
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
   "dependencies": {
-    "accordion-js": "^3.4.0",
-    "swiper": "^11.1.15"
+    "accordion-js": "^3.3.4",
+    "swiper": "^11.1.4",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }
