@@ -1,0 +1,416 @@
+/* Base styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.cooperation-section {
+    text-align: center;
+    position: relative;
+}
+textarea {
+    resize: none;
+}
+.contacts-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 124px;
+    letter-spacing: 1.8px;
+    margin-bottom: 80px;
+    margin-top: 0;
+    display: block;
+    text-align: left;
+}
+
+.accent-green {
+    color: #00B068;
+}
+.container-together {
+    position: relative;
+}
+.contacts-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+    /* margin-top: 80px; */
+    /* margin-bottom: 164px; */
+}
+
+.company-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 288px;
+    justify-content: space-between;
+}
+
+.company-contacts-title {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+}
+
+.decorative-image {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 526px;
+    height: 408px;
+    transform: translateY(-80px);
+}
+
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.icon {
+    fill: none;
+    stroke: #00B068;
+}
+.link-icon {
+    width: 24px;
+    height: 24px;
+}
+
+#cooperation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    width: 100%;
+}
+.cooperation-input-wrap {
+    display: inline;
+    position: relative;
+}
+.cooperation-iput-svg {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+input,
+textarea,
+button {
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+}
+
+input {
+    text-align: left;
+    font-weight: 300;
+    background-color: #E4E5E6;
+    border: none;
+}
+
+textarea {
+    height: 128px;
+    font-weight: 300;
+    text-align: left;
+    background-color: #E4E5E6;
+    border: none;
+}
+.cooperation-input-text {
+    display: none;
+    text-align: left;
+    margin-top: 4px;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.33333;
+    letter-spacing: 0.04em;
+    color: #e74a3b;
+}
+button {
+    background-color: #00B068;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 173px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #009156;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+}
+
+.modal-content {
+    background-color: #f0f0f0;
+    padding: 64px;
+    border: 1px solid #888;
+    max-width: 492px;
+    height: 280px;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #00B068;
+    margin-bottom: 16px;
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide decorative image when modal is active */
+.modal-active .decorative-image {
+    display: none;
+}
+.modal-active {
+    display: flex;
+}
+/* Responsive styles */
+@media (max-width: 767px) {
+    .cooperation-section {
+        padding-bottom: 80px;
+    }
+    .contacts-title {
+        font-family: Impact;
+        font-size: 52px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        line-height: 64px;
+        letter-spacing: 1.7999999523162842px;
+        text-align: left;
+    }
+
+    .decorative-image {
+        display: none;
+    }
+
+    .company-contacts-title {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .contacts-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-contacts {
+        margin-bottom: 40px;
+        height: 104px;
+    }
+
+    .address-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        width: 100%;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 320px;
+        height: 328px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .cooperation-section {
+            padding-bottom: 124px;
+        }
+    .cooperation-background {
+        position: absolute;
+        right: -50px;
+        top: -120px;
+        /* transform: translateY(50%); */
+        width: 400px;
+        height: 300px;
+        background-image: url(/img/background-tablet-1x.png);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .cooperation-background {
+            background-image: url(/img/background-tablet-2x.png);
+            background-size: cover;
+        }
+     }
+    .contacts-form {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-bottom: 124px;
+    }
+    .decorative-image {
+        display: block;
+    }
+    .company-contacts-title {
+        width: 70%;
+        margin-bottom: 32px;
+    }
+    .contacts-title {
+        margin-bottom: 60px;
+    }
+    #cooperation-form input,
+    #cooperation-form textarea {
+        width: 100%;
+    }
+
+    .company-contacts {
+        flex-direction: row;
+        height: 24px;
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+
+    .address-list {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 16px;
+    }
+
+    button {
+        width: 173px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cooperation-section {
+            padding-bottom:  164px;
+    }
+    .cooperation-background {
+        position: absolute;
+        right: -50px;
+        top: -120px;
+            /* transform: translateY(50%); */
+        width: 600px;
+        height: 450px;
+        background-image: url(/img/background-desktop-1x.png);
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .section-button {
+                background-image: url(/img/background-desktop-2x.png);
+            }
+        }
+    .contacts-title {
+        width: 50%;
+    }
+    .contacts-form {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 136px;
+    }
+    .contacts-form {
+        width: 100%;
+    }
+    .address-list {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .company-contacts,
+    #cooperation-form {
+        flex: 1;
+    }
+    .contacts-form>div+div {
+        margin-left: 136px;
+    }
+    .company-title-list-wrap {
+        width: 488px;
+    }
+    .company-contacts {
+        height: 104px;
+    }
+}

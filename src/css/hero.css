@@ -1,0 +1,276 @@
+/* ============== HERO Mobile STYLES ============== */
+@media screen and (min-width: 320px) {
+    .decor {
+     background-image: url(../img/mobile-decor.png);
+     background-repeat: no-repeat;
+     padding-bottom: 16px;
+     background-position: -23px 0;
+
+    } 
+    .hidden{
+      display: none;
+    }
+    .hero-section{
+      margin-bottom: 80px;  /* нижній відступ від секції, це правильно, треба прибрати з social media position absolute і потім margin спрацюэ*/
+      
+      } 
+      
+      
+    
+  }
+
+  /*Text style*/
+.hero-title{
+  display: block;
+ /* width: 100%;*/
+  padding-top: 96px; 
+  padding-bottom: 40px;
+}
+
+.сommon-text-style{
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+ .hero-sentence{
+  font-size: 64px;
+  line-height: 125%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  box-sizing: border-box;
+  
+ 
+}
+  .break{
+      color: #00B068;
+      text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+    .hero-info{
+      font-family:'Poppins';
+      font-size: 18px;
+      line-height: 156%;
+      padding-bottom: 56px;
+      padding-top: 40px;
+    }
+  
+    .paragraph-desktop {
+      display: none;
+  }
+    .hero-order{
+      position: relative;
+      display: flex; /*?*/
+      align-items: center;/*?*/
+      
+  
+     }
+     .hero{
+      padding-bottom: 40px;
+     }
+    .hero-text-deco {
+      color: #00B068;
+    }
+
+.order-project-link{
+font-family:'Poppins';
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap:12px;
+  margin-top: 30px;
+
+}
+.hero-link-arrow{
+ width:30px;
+  height: 16px;
+  fill: #00B068; 
+}
+.light-green-box{
+  width: 165px;
+  height: 92px; 
+  background-color: rgba(0, 176, 104, 0.2);
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+ }
+
+    /*Social media styles*/
+
+    .social-media{
+      
+      display: block;
+      background-color: rgba(228, 229, 230, 0.5);
+      width: 100vw;
+      position: absolute;
+      left:0; 
+  }
+
+  
+  .social-links{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+      font-weight: 300;
+      font-size: 16px;
+     line-height: 150%;
+     letter-spacing: 0.03em;
+
+    }
+
+ 
+  
+  /* ============== HERO Tablet STYLES ============== */
+
+  @media screen and (min-width: 768px) {
+
+    .hero-section{
+      margin-bottom: 124px;  /* нижній відступ від секції*/
+      } 
+
+    .decor {
+      background-image: url(../img/tablet-decor.png);
+      background-repeat: no-repeat;
+      padding-bottom: 16px;
+ } 
+ .hero-title{
+  padding-top: 88px; 
+  padding-bottom: 60px; 
+ }
+ 
+.сommon-text-style{
+  letter-spacing: 0.01em;
+}
+.hero-sentence{
+  font-size: 136px;
+  line-height: 115%;
+}
+
+.order-project-link{
+  font-size: 20px;
+  line-height: 160%;
+  margin: 0%;
+  }
+  .light-green-box{
+    width: 261px;
+    height: 96px; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    right: 290px;
+    top: 20%;
+    transform: translateY(-50%);
+    }
+    .hero-info{
+      
+      font-size: 20px;
+      line-height: 160%;
+      padding-bottom: 80px;
+      
+    }
+    .social-media{
+      
+      display: block;
+      width: 100vw;
+      position: absolute; 
+      left:0;
+      height: 104px;
+    
+      }
+  
+  .social-links{
+
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      height: 100%;
+    
+    }
+}
+/* ============== HERO DESCTOP STYLES ============== */
+  
+  
+  @media screen and (min-width: 1280px) {
+    .hero-section{
+      margin-bottom: 99px;  /* нижній відступ від секції*/
+      } 
+
+    .decor {
+      background-image: url(../img/the-whole-desktop-hero.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+  }
+     
+  .hero-title{
+  font-size: 136px;
+  line-height: 115%;
+  padding-bottom: 80px;
+  padding-top: 168px;
+  }
+  .hidden{
+    display: inline;
+    padding-left: 40px;
+  } 
+  .hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 136px;
+    padding-bottom: 116px; 
+    margin-top: -35px;
+   
+    
+  } 
+  .hero{
+    padding-bottom: 0px;
+   }
+   
+  .hero-order{
+    width: 416px;
+    height: 96px;
+    margin-top:32px;
+    margin-bottom: 32px;
+    margin-left: 4px;
+    margin-right: 167px;
+  }
+  .light-green-box{
+    top: 133px;
+    left: 204px;
+    }
+  
+ .paragraph-hidden{
+  display: none;
+ }
+ .paragraph-desktop {
+  display: inline;
+}
+ .hero-info{
+  width: 592px;
+  height: 96px;
+
+ }
+ .light-green-box{
+  
+ 
+  left: 155px;
+  z-index: 2;
+  top: 50px;
+  
+  transform: translateY(-50%);
+  }
+
+}
+  
+  

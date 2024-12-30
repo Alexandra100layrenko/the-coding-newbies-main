@@ -1,0 +1,144 @@
+.benefits-section {
+  padding: 80px 0;
+}
+
+.benefits-content {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.benefit-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit-icon {
+  stroke: #00b068;
+  fill: transparent;
+}
+
+.benefits-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.green-color {
+  color: #00b068;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits-list-item:not(:first-child) {
+  margin-top: 32px;
+}
+
+.benefit-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 176, 104, 0.1);
+  border-radius: 8px;
+}
+
+.benefit-card-title {
+  margin-top: 16px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.benefit-text {
+  max-width: 100%;
+  margin-top: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-section {
+    padding: 124px 0;
+  }
+
+  .benefits-title {
+    max-width: 704px;
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+  }
+
+  .benefits-content {
+    margin-top: 0;
+    position: relative;
+    top: -18px;
+  }
+
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefits-list .benefits-list-item:first-child {
+    margin-left: 368px;
+  }
+
+  .benefits-list .benefits-list-item:nth-child(3) {
+    margin-left: 32px;
+  }
+
+  .benefits-list-item {
+    margin-top: 0;
+  }
+
+  .benefit-card-title {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+
+  .benefit-text {
+    max-width: 336px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .benefits-section {
+    padding: 164px 0;
+  }
+
+  .benefits-title {
+    max-width: 686px;
+  }
+
+  .benefits-content {
+    top: -86px;
+  }
+
+  .benefits-list .benefits-list-item:first-child {
+    margin-left: 832px;
+  }
+
+  .benefits-list .benefits-list-item:nth-child(4) {
+    margin-left: 32px;
+  }
+
+  .benefit-text {
+    max-width: 384px;
+  }
+}
