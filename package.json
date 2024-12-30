@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/the-coding-newbies-main/",
+    "build": "vite build --base=/the-coding-newbies-main/ --emptyOutDir",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.0.5"
+    "vite": "^6.0.6"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
